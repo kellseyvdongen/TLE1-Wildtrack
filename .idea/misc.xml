@@ -5,16 +5,13 @@
       <profile-state>
         <expanded-state>
           <State>
-            <id>Assignment issuesJavaScript and TypeScript</id>
           </State>
           <State>
             <id>Code quality toolsJavaScript and TypeScript</id>
           </State>
           <State>
-            <id>Dockerfile</id>
           </State>
           <State>
-            <id>ES2015 migration aidsJavaScript and TypeScript</id>
           </State>
           <State>
             <id>JavaScript and TypeScript</id>
@@ -23,10 +20,8 @@
             <id>PHP</id>
           </State>
           <State>
-            <id>RegExp</id>
           </State>
           <State>
-            <id>Undefined symbolsPHP</id>
           </State>
         </expanded-state>
         <selected-state>
