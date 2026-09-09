@@ -7,42 +7,51 @@ function getAnimals():array {
         [
             "id" => 1,
             "name" => "Lion",
-            "img" => "../images/lion.jpg"
+            "img" => "./images/lion.jpg",
+            "date" => "yesterday, 12:00"
         ],
         [
             "id" => 2,
             "name" => "Lioness",
-            "img" => "../images/lioness.jpeg"
+            "img" => "./images/lioness.jpeg",
+            "date" => "today, 15:00"
         ],
         [
             "id" => 3,
             "name" => "Tiger",
-            "img" => "../images/tiger.jpg"
+            "img" => "./images/tiger.jpg",
+            "date" => "23-09-2026, 11:00"
+
         ],
         [
             "id" => 4,
             "name" => "Tigress",
-            "img" => "../images/tigress.jpg"
+            "img" => "./images/tigress.jpg",
+            "date" => "yesterday, 22:00"
         ],
         [
             "id" => 5,
             "name" => "Bear",
-            "img" => "../images/bear.webp"
+            "img" => "./images/bear.webp",
+            "date" => "today, 09:00"
         ],
         [
             "id" => 6,
             "name" => "Sow",
-            "img" => "../images/sow.jpg"
+            "img" => "./images/sow.jpg",
+            "date" => "yesterday, 18:00"
         ],
         [
             "id" => 7,
             "name" => "Bull",
-            "img" => "../images/bull.png"
+            "img" => "./images/bull.png",
+            "date" => "today, 14:00"
         ],
         [
             "id" => 8,
             "name" => "Cow",
-            "img" => "../images/cow.jpg"
+            "img" => "./images/cow.jpg",
+            "date" => "yesterday, 20:00"
         ]
     ];
 }
@@ -56,6 +65,7 @@ function getAnimalsDetails($id): array|false
 {
     $tags = [
         1 => [
+            "img" => "./images/lion.jpg",
             "name" => "Lion",
             "gender" => "male",
             "estimated date of birth" => "may 2015",
