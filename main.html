@@ -5,20 +5,41 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="js/main.js" defer></script>
 
     <title>Document</title>
 </head>
 <body>
 <div id="navigation">
     <nav>
-
+        <div>
+            <div>
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div>
+                <img src="images/overview.png" alt="Overview Icon">
+                <img src="images/animals-icon.png" alt="Animal Icon">
+                <img src="images/statistics.png" alt="Statistics Icon">
+            </div>
+        </div>
+        <div>
+            <img src="images/help.png" alt="Help Icon">
+        </div>
     </nav>
 </div>
 <div id="sidebar">
+    <div class="sidebar-header">
     <h1>WildTrack</h1>
+        <p>Nature monitoring</p>
+    </div>
     <div id="animal-list">
+        <div>
+            <form id="search-form">
+                <input type="text" id="animals" placeholder="name of animal">
+                <button type="submit">Search</button>
+            </form>
+        </div>
     </div>
 </div>
 
