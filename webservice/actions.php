@@ -222,10 +222,16 @@ function getAnimalsDetails($id): array|false
     return $tags[$id] ?? false;
 }
 
-if (!isset($_GET['id'])) {
-    $data = getAnimals();
-} else {
+
+if (isset($_GET['id'])) {
     $data = getAnimalsDetails($_GET['id']);
+} else if (isset($_GET['name'])) {
+    $animals = getAnimals();
+    $data = array_values(array_filter($animals, function ($animal) {
+        return stripos($animal['name'], $_GET['name']) !== false;
+    }));
+} else {
+    $data = getAnimals();
 }
 
 header("Content-Type: application/json");

@@ -1,4 +1,6 @@
 const animalContainer = document.querySelector("#animals-list");
+const searchContainer = document.querySelector("#search-form")
+searchContainer.addEventListener("submit", searchAnimals)
 
 function loadAnimals(url, successHandler) {
 
@@ -15,6 +17,20 @@ function loadAnimals(url, successHandler) {
         })
         .then(successHandler)
         .catch(showError);
+}
+
+function searchAnimals(event) {
+    event.preventDefault();
+    const searchInput = document.querySelector("#animals-search")
+    const searchValue = searchInput.value.trim()
+
+    if (searchValue) {
+        animalContainer.innerHTML = '';
+        loadAnimals(`./webservice/actions.php?name=${searchValue}`, allAnimalsLoaded)
+    } else {
+        animalContainer.innerHTML = '';
+        loadAnimals("./webservice/actions.php", allAnimalsLoaded)
+    }
 }
 
 function allAnimalsLoaded(animals) {
