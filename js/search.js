@@ -1,4 +1,4 @@
-const animalContainer = document.querySelector("#animal-list");
+const animalContainer = document.querySelector("#animals-list");
 
 function loadAnimals(url, successHandler) {
 

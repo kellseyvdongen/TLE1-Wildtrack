@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: Calibri Light, sans-serif;
+    background-color: #1b2317;
+}
+
+#navigation {
+    flex: 1 0 5%;
+    width: 10%;
+    background-color: #171c12;
+}
+
+nav img {
+    width: 100%;
+    align-self: center;
+    padding: 23%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#sidebar {
+    flex: 3 0 25%;
+    max-width: 20%;
+    width: 20%;
+}
+
+.sidebar-header {
+    text-align: left;
+    margin: 25px;
+    color: white;
+}
+
+
+#map {
+    flex: 7 0 70%;
+    width: 70%;
+    min-width: 0;
+}
+
+.map-picture {
+    height: 2000px;
+    width: 3000px;
+}
+
+#map-container {
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+#map-container {
+    position: relative;
+}
+
+
+#animal-list {
+    padding: 5% 10%;
+    align-items: center;
+}
+
+form input {
+    color: #b67f3b;
+    padding: 10px;
+    border: 1px solid #b67f3b;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+form button {
+    color: white;
+    background-color: #b67f3b;
+    padding: 10px;
+    border: 1px solid #b67f3b;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+form button:hover {
+    background-color: #bf8742;
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+    border: 1px solid #bf8742;
+}

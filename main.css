@@ -65,15 +65,6 @@ nav {
     position: relative;
 }
 
-.ball {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(230, 126, 34, 0.9);
-    pointer-events: none;
-    transform: translate(0, 0);
-}
 
 #animal-list {
     padding: 5% 10%;
@@ -102,4 +93,108 @@ form button:hover {
     transform: scale(1.02);
     transition: transform 0.5s ease;
     border: 1px solid #bf8742;
+}
+
+#animals-list {
+    padding: 10px;
+}
+
+.animal-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 85px;
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #242c1d;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.animal-card img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-right: 12px;
+}
+
+.animal-info {
+    flex: 1;
+}
+
+.animal-name {
+    font-size: 15px;
+    color: white;
+
+}
+
+.animal-date {
+    font-size: 12px;
+    color: white;
+    padding-top: 5px;
+}
+
+#animal-details {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    width: 950px;
+    height: 720px;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    color: black;
+}
+
+.details-top {
+    display: flex;
+    gap: 30px;
+}
+
+#details-image {
+    width: 280px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details-info {
+    flex: 1;
+}
+
+#details-name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.details-info p {
+    margin: 5px 0;
+}
+
+.details-info strong {
+    display: block;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+#physical-features {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#physical-features h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+
+    margin-bottom: 16px;
+
+    font-size: 14px;
 }
